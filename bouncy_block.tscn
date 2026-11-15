@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://ctn2tgq82dm0v"]
+
+[ext_resource type="Script" uid="uid://dwcpaano1gq6j" path="res://scripts/bouncy_block.gd" id="1_kbnsy"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_sch4w"]
+load_path = "res://.godot/imported/bounce.png-f29d174de38c5e85a3e02f594b3dd4c1.ctex"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kbnsy"]
+size = Vector2(17, 10)
+
+[node name="bouncy block" type="RigidBody2D" unique_id=163741983]
+script = ExtResource("1_kbnsy")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=373330129]
+position = Vector2(-0.5, 2.3841858e-07)
+scale = Vector2(0.984375, 1)
+texture = SubResource("CompressedTexture2D_sch4w")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=598322930]
+position = Vector2(-0.5, -1)
+shape = SubResource("RectangleShape2D_kbnsy")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

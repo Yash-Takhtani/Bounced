@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://bmibhtk8u5l60"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_q8a5y"]
+font_size = 150
+font_color = Color(1, 0.8745098, 0, 1)
+
+[node name="CanvasLayer" type="CanvasLayer" unique_id=230031434]
+
+[node name="winscene" type="Control" parent="." unique_id=859913088]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="winscene" unique_id=1182581648]
+layout_mode = 0
+offset_left = 303.0
+offset_top = 212.0
+offset_right = 904.0
+offset_bottom = 421.0
+text = "You win"
+label_settings = SubResource("LabelSettings_q8a5y")

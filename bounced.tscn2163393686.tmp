@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://pnybxa17835c"]
+
+[ext_resource type="PackedScene" uid="uid://26y0ljxha6io" path="res://player.tscn" id="1_7v8as"]
+[ext_resource type="PackedScene" uid="uid://belvyw54ufki5" path="res://map.tscn" id="1_b7oct"]
+[ext_resource type="PackedScene" uid="uid://ctn2tgq82dm0v" path="res://bouncy_block.tscn" id="1_pvamg"]
+
+[node name="Bounced" type="Node2D" unique_id=584395163]
+
+[node name="Player" parent="." unique_id=1023370793 instance=ExtResource("1_7v8as")]
+position = Vector2(7, -43)
+
+[node name="bouncy block" parent="." unique_id=1447680543 instance=ExtResource("1_pvamg")]
+position = Vector2(15, -3)
+freeze = true
+contact_monitor = true
+max_contacts_reported = 1000
+
+[node name="map" parent="." unique_id=909346435 instance=ExtResource("1_b7oct")]
+position = Vector2(12, -7)

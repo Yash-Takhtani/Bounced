@@ -1,0 +1,24 @@
+[gd_scene format=4 uid="uid://belvyw54ufki5"]
+
+[ext_resource type="Texture2D" uid="uid://b1jocb73fyxjy" path="res://sprites/platforms.png" id="1_c7s6e"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_c7s6e"]
+texture = ExtResource("1_c7s6e")
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wijl4"]
+resource_name = "floor"
+texture = ExtResource("1_c7s6e")
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, -0.08705139, -8, -0.08705139)
+
+[sub_resource type="TileSet" id="TileSet_v0s4m"]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_c7s6e")
+sources/4 = SubResource("TileSetAtlasSource_wijl4")
+
+[node name="map" type="Node2D" unique_id=909346435]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1151196547]
+tile_map_data = PackedByteArray("AAD8/wIABAAAAAAAAAD9/wIABAAAAAAAAAD+/wIABAAAAAAAAAD//wIABAAAAAAAAAAAAAIABAAAAAAAAAACAAIABAAAAAAAAAADAAIABAAAAAAAAAABAAIABAAAAAAAAAA=")
+tile_set = SubResource("TileSet_v0s4m")

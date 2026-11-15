@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://dv4a2mth181eo"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_ql73s"]
+font_size = 150
+font_color = Color(1, 0.8745098, 0, 1)
+
+[node name="CanvasLayer" type="CanvasLayer" unique_id=1253215926]
+visible = false
+
+[node name="deathscene" type="Control" parent="." unique_id=88221580]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="deathscene" unique_id=43040624]
+layout_mode = 0
+offset_left = 264.0
+offset_top = 205.0
+offset_right = 949.0
+offset_bottom = 414.0
+text = "You died"
+label_settings = SubResource("LabelSettings_ql73s")

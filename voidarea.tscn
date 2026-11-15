@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://dfyijxprldgvh"]
+
+[ext_resource type="Script" uid="uid://ck1626tojesxn" path="res://scripts/voidarea.gd" id="1_j6tw4"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_ql73s"]
+distance = -226.0
+
+[node name="voidarea" type="Area2D" unique_id=1327274705]
+script = ExtResource("1_j6tw4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1324345266]
+position = Vector2(3, -109)
+shape = SubResource("WorldBoundaryShape2D_ql73s")

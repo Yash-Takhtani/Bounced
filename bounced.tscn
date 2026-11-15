@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://pnybxa17835c"]
+
+[ext_resource type="PackedScene" uid="uid://dv4a2mth181eo" path="res://deathscene.tscn" id="1_6l37i"]
+[ext_resource type="PackedScene" uid="uid://26y0ljxha6io" path="res://player.tscn" id="1_7v8as"]
+[ext_resource type="PackedScene" uid="uid://bmibhtk8u5l60" path="res://winscene.tscn" id="1_da6u8"]
+[ext_resource type="PackedScene" uid="uid://cu0166ioig5fc" path="res://door.tscn" id="1_hiybh"]
+[ext_resource type="PackedScene" uid="uid://ctn2tgq82dm0v" path="res://bouncy_block.tscn" id="1_pvamg"]
+[ext_resource type="Script" uid="uid://7116asrcf6u5" path="res://bounced.gd" id="1_qubsg"]
+
+[node name="Bounced" type="Node2D" unique_id=584395163]
+script = ExtResource("1_qubsg")
+
+[node name="bouncy block4" parent="." unique_id=596127051 instance=ExtResource("1_pvamg")]
+position = Vector2(129, -247.99998)
+rotation = -1.097812
+freeze = true
+contact_monitor = true
+max_contacts_reported = 10
+
+[node name="winscene" parent="." unique_id=230031434 instance=ExtResource("1_da6u8")]
+visible = false
+
+[node name="deathscene" parent="." unique_id=88221580 instance=ExtResource("1_6l37i")]
+
+[node name="Door" parent="." unique_id=1711018130 instance=ExtResource("1_hiybh")]
+position = Vector2(462, -378)
+
+[node name="Player" parent="." unique_id=1023370793 instance=ExtResource("1_7v8as")]
+position = Vector2(58, -53)
+
+[node name="bouncy block3" parent="." unique_id=802693497 instance=ExtResource("1_pvamg")]
+position = Vector2(-150, -20)
+rotation = 1.0314896
+freeze = true
+contact_monitor = true
+max_contacts_reported = 10
+
+[node name="bouncy block2" parent="." unique_id=445433269 instance=ExtResource("1_pvamg")]
+position = Vector2(143, 10)
+rotation = 5.284857
+freeze = true
+contact_monitor = true
+max_contacts_reported = 10
+
+[node name="bouncy block" parent="." unique_id=1447680543 instance=ExtResource("1_pvamg")]
+position = Vector2(53, 20.999998)
+rotation = 0.6632251
+freeze = true
+contact_monitor = true
+max_contacts_reported = 10
